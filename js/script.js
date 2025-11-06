@@ -11,6 +11,13 @@ For assistance:
    Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
 */
 
+const header = document.querySelector('header');
+let searchHtml = `<label for="search" class="student-search">
+               <span>Search by name</span>
+               <input id="search" placeholder="Search by name...">
+               <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+            </label>`
+header.insertAdjacentHTML('beforeend',searchHtml);
 
 const numPages = 9;
 const buttonsUL = document.querySelector('.link-list');
